@@ -95,12 +95,11 @@ with c3:
 
     st.markdown(f"""
     <div class='card'>
-        <h3>💰 Avg Income</h3>
+        <h3>💰 Avg Salary</h3>
         <h1>₹ {avg_income}</h1>
-        <p>Monthly Income</p>
+        <p>Average Monthly Salary</p>
     </div>
-    """,unsafe_allow_html=True)
-
+    """, unsafe_allow_html=True)
 with c4:
 
     st.markdown(f"""
