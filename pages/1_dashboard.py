@@ -31,7 +31,7 @@ df = pd.read_csv(
 st.markdown("""
 <div class='header'>
 
-<h1>🤖 AI Employee Attrition Intelligence Dashboard</h1>
+<h1>🤖 AI Employee Attrition Analytics Dashboard</h1>
 
 <p>
 Monitor employee behaviour, identify attrition trends and
@@ -84,7 +84,7 @@ with c2:
     st.markdown(f"""
     <div class='card'>
         <h3>📉 Attrition</h3>
-        <h1>{attrition_count}</h1>
+        <h1>{attrition}</h1>
         <p>{attrition_rate:.2f}% Employees Left</p>
     </div>
     """, unsafe_allow_html=True)
@@ -93,7 +93,7 @@ with c3:
     st.markdown(f"""
     <div class='card'>
         <h3>💰 Avg Salary</h3>
-        <h1>₹ {avg_income:,.0f}</h1>
+        <h1>₹ {avg_income:,}</h1>
         <p>Average Monthly Salary</p>
     </div>
     """, unsafe_allow_html=True)

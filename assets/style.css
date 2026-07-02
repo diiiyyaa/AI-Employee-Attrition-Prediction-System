@@ -151,15 +151,17 @@ white-space:nowrap;
 
 .card h1{
 
-font-size:52px;
+font-size:44px;
 
 font-weight:700;
 
-color:#FFFFFF;
+color:white;
 
 margin:8px 0;
 
-line-height:1.1;
+line-height:1.2;
+
+white-space:nowrap;
 
 }
 
