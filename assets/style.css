@@ -77,29 +77,59 @@ color:#E2E8F0;
 
 .card{
 
-background:#111827;
+background:linear-gradient(145deg,#111827,#0F172A);
 
-padding:25px;
+padding:28px;
 
-border-radius:18px;
+border-radius:22px;
 
 text-align:center;
 
-border:1px solid rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,0.08);
 
-transition:.35s;
+transition:all .35s ease;
 
-box-shadow:0px 10px 25px rgba(0,0,0,.35);
+box-shadow:0 10px 30px rgba(0,0,0,.35);
 
-height:180px;
+min-height:230px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:linear-gradient(90deg,#7C3AED,#2563EB,#06B6D4);
 
 }
 
 .card:hover{
 
-transform:translateY(-10px);
+transform:translateY(-8px) scale(1.02);
 
-box-shadow:0px 18px 35px rgba(124,58,237,.45);
+box-shadow:0 20px 40px rgba(124,58,237,.35);
 
 border:1px solid #7C3AED;
 
@@ -109,29 +139,27 @@ border:1px solid #7C3AED;
 
 color:#94A3B8;
 
-font-size:16px;
+font-size:18px;
 
-margin-bottom:15px;
+font-weight:600;
 
-white-space: nowrap;
+margin-bottom:18px;
 
-overflow: hidden;
-
-text-overflow: ellipsis;
+white-space:nowrap;
 
 }
 
-
-
 .card h1{
 
-font-size:42px;
+font-size:52px;
 
-font-weight:bold;
+font-weight:700;
 
-color:white;
+color:#FFFFFF;
 
-margin-bottom:10px;
+margin:8px 0;
+
+line-height:1.1;
 
 }
 
@@ -139,10 +167,13 @@ margin-bottom:10px;
 
 color:#CBD5E1;
 
-font-size:15px;
+font-size:16px;
+
+margin-top:12px;
+
+letter-spacing:.3px;
 
 }
-
 /* ===========================================
    BUTTON
 =========================================== */

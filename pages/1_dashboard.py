@@ -72,45 +72,40 @@ avg_age = round(
 c1,c2,c3,c4 = st.columns(4)
 
 with c1:
-
     st.markdown(f"""
     <div class='card'>
         <h3>👨‍💼 Employees</h3>
         <h1>{total_employees}</h1>
         <p>Total Workforce</p>
     </div>
-    """,unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 with c2:
-
     st.markdown(f"""
     <div class='card'>
         <h3>📉 Attrition</h3>
-        <h1>{attrition}</h1>
-        <p>{attrition_rate}% Employees Left</p>
+        <h1>{attrition_count}</h1>
+        <p>{attrition_rate:.2f}% Employees Left</p>
     </div>
-    """,unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 with c3:
-
     st.markdown(f"""
     <div class='card'>
         <h3>💰 Avg Salary</h3>
-        <h1>₹ {avg_income}</h1>
+        <h1>₹ {avg_income:,.0f}</h1>
         <p>Average Monthly Salary</p>
     </div>
     """, unsafe_allow_html=True)
-with c4:
 
+with c4:
     st.markdown(f"""
     <div class='card'>
         <h3>📊 Avg Age</h3>
-        <h1>{avg_age}</h1>
+        <h1>{avg_age:.1f}</h1>
         <p>Employee Age</p>
     </div>
-    """,unsafe_allow_html=True)
-
-st.markdown("<br>",unsafe_allow_html=True)
+    """, unsafe_allow_html=True)        
 
 # ===========================
 # FILTERS
